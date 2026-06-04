@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge | Portfolio de Ingeniería Informática</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .tech-badge { @apply px-2.5 py-1 text-xs font-medium rounded-md bg-slate-800 text-slate-300 border border-slate-700/50; }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-100 min-h-screen selection:bg-indigo-500 selection:text-white">
+
+    <header class="relative overflow-hidden py-20 lg:py-32 border-b border-slate-800 bg-gradient-to-b from-slate-900 via-[#0f172a] to-[#0f172a]">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20"></div>
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-medium mb-6">
+                <i data-lucide="terminal" class="w-3.5 h-3.5"></i> Desarrollador & Ingeniero Informático
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent mb-6">
+                Hola, soy <span class="text-indigo-400">Jorge</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed mb-8">
+                Especializado en el desarrollo de aplicaciones Full-Stack, computación eficiente y optimización de sistemas. Me apasiona resolver problemas complejos mediante software bien estructurado, contenerizado y escalable.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="https://github.com/Caver0" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 font-medium text-sm transition shadow-lg shadow-indigo-600/20">
+                    <i data-lucide="github" class="w-4 h-4"></i> GitHub Perfil
+                </a>
+                <a href="#proyectos" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 font-medium text-sm transition">
+                    Ver Proyectos <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-5xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-slate-900/50 border border-slate-800/80 backdrop-blur-sm">
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-lg bg-indigo-500/10 text-indigo-400"><i data-lucide="code-2" class="w-5 h-5"></i></div>
+                <div><p class="text-xs text-slate-500 font-medium">Backend</p><p class="text-sm font-semibold">Node.js / Python</p></div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400"><i data-lucide="database" class="w-5 h-5"></i></div>
+                <div><p class="text-xs text-slate-500 font-medium">Bases de Datos</p><p class="text-sm font-semibold">MongoDB / Postgres</p></div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-lg bg-amber-500/10 text-amber-400"><i data-lucide="container" class="w-5 h-5"></i></div>
+                <div><p class="text-xs text-slate-500 font-medium">Infraestructura</p><p class="text-sm font-semibold">Docker / Nginx</p></div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="p-2 rounded-lg bg-cyan-500/10 text-cyan-400"><i data-lucide="cpu" class="w-5 h-5"></i></div>
+                <div><p class="text-xs text-slate-500 font-medium">Especialidad</p><p class="text-sm font-semibold">Algoritmos / Async</p></div>
+            </div>
+        </div>
+    </section>
+
+    <main id="proyectos" class="max-w-5xl mx-auto px-6 py-12">
+        <div class="flex items-center gap-3 mb-10">
+            <div class="h-6 w-1 bg-indigo-500 rounded-full"></div>
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-white">Proyectos Destacados</h2>
+        </div>
+
+        <div class="space-y-12">
+            
+            <article class="group grid md:grid-cols-12 gap-6 p-6 md:p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-slate-700/80 transition relative overflow-hidden">
+                <div class="md:col-span-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <h3 class="text-xl md:text-2xl font-bold text-white group-hover:text-indigo-400 transition">Fibrito — Asistente Nutricional Adaptativo</h3>
+                            <span class="px-2 py-0.5 text-[10px] uppercase font-bold tracking-wider rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">TFG</span>
+                        </div>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-6">
+                            Aplicación web inteligente para la generación automatizada y ajuste de planificaciones nutricionales. Integra un solver híbrido (sistemas lineales y refinamiento iterativo residual) para balancear porciones y un sistema experto basado en factores de confianza para adaptar calorías autónomamente según la tendencia de peso real y adherencia del usuario.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-6 md:mb-0">
+                        <span class="tech-badge">FastAPI (Python)</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                        <span class="tech-badge">Spoonacular API</span>
+                    </div>
+                </div>
+                <div class="md:col-span-4 flex md:flex-col justify-end md:justify-start items-end gap-3 border-t md:border-t-0 md:border-l border-slate-800 pt-4 md:pt-0 md:pl-6">
+                    <a href="https://github.com/Caver0/Fibrito" target="_blank" class="w-full text-center px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold transition border border-slate-700 flex items-center justify-center gap-2">
+                        <i data-lucide="github" class="w-3.5 h-3.5"></i> Ver Código
+                    </a>
+                    <a href="https://fibrito-frontend.onrender.com" target="_blank" class="w-full text-center px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-xs font-semibold transition flex items-center justify-center gap-2">
+                        <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Demo en Vivo
+                    </a>
+                </div>
+            </article>
+
+            <article class="group grid md:grid-cols-12 gap-6 p-6 md:p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-slate-700/80 transition relative overflow-hidden">
+                <div class="md:col-span-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <h3 class="text-xl md:text-2xl font-bold text-white group-hover:text-indigo-400 transition">Particle Swarm Optimization (PSO Lab)</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-6">
+                            Entorno experimental y algorítmico diseñado para analizar y comparar la evaluación de funciones objetivo mediante múltiples paradigmas de concurrencia y paralelismo. Permite aislar y contrastar de manera reproducible modos secuenciales, multihilo, multiproceso, computación asíncrona (<code class="text-indigo-300">asyncio</code> para entornos I/O-bound) y vectorización nativa en bloques con <code class="text-indigo-300">NumPy</code>. Incluye pipelines analíticos que generan gráficas de convergencia y análisis paramétrico frente a baselines de la industria.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-6 md:mb-0">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">NumPy</span>
+                        <span class="tech-badge">Asyncio</span>
+                        <span class="tech-badge">Multiprocessing</span>
+                        <span class="tech-badge">Matplotlib</span>
+                        <span class="tech-badge">Pytest</span>
+                    </div>
+                </div>
+                <div class="md:col-span-4 flex md:flex-col justify-end md:justify-start items-end gap-3 border-t md:border-t-0 md:border-l border-slate-800 pt-4 md:pt-0 md:pl-6">
+                    <a href="https://github.com/Caver0/ParticleSwarmOptimization" target="_blank" class="w-full text-center px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold transition border border-slate-700 flex items-center justify-center gap-2">
+                        <i data-lucide="github" class="w-3.5 h-3.5"></i> Ver Repositorio
+                    </a>
+                </div>
+            </article>
+
+            <article class="group grid md:grid-cols-12 gap-6 p-6 md:p-8 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-slate-700/80 transition relative overflow-hidden">
+                <div class="md:col-span-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <h3 class="text-xl md:text-2xl font-bold text-white group-hover:text-indigo-400 transition">Proyecto Servidores Web — GastroMatch</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-6">
+                            Arquitectura de aplicación web contenerizada orientada a la toma de decisiones grupales en tiempo real (votación de restaurantes y gestión de salas). El sistema desacopla un backend robusto en Node.js de una interfaz estática optimizada que es servida de forma eficiente mediante un proxy inverso con Nginx. Implementa control de sesiones seguro mediante JSON Web Tokens (JWT) y persistencia escalable sobre MongoDB.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-6 md:mb-0">
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express</span>
+                        <span class="tech-badge">Nginx</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Docker Compose</span>
+                        <span class="tech-badge">JWT</span>
+                    </div>
+                </div>
+                <div class="md:col-span-4 flex md:flex-col justify-end md:justify-start items-end gap-3 border-t md:border-t-0 md:border-l border-slate-800 pt-4 md:pt-0 md:pl-6">
+                    <a href="https://github.com/Caver0" target="_blank" class="w-full text-center px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold transition border border-slate-700 flex items-center justify-center gap-2">
+                        <i data-lucide="github" class="w-3.5 h-3.5"></i> Ver Código
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <section class="max-w-5xl mx-auto px-6 py-12 border-t border-slate-800/60">
+        <div class="flex items-center gap-3 mb-2">
+            <div class="h-6 w-1 bg-indigo-500 rounded-full"></div>
+            <h2 class="text-2xl font-bold tracking-tight text-white">Otros Repositorios</h2>
+        </div>
+        <p class="text-slate-400 text-sm mb-8">Cargados dinámicamente desde mi perfil de GitHub.</p>
+
+        <div id="github-repos" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="animate-pulse bg-slate-900/30 border border-slate-800/80 rounded-xl p-5 h-40"></div>
+            <div class="animate-pulse bg-slate-900/30 border border-slate-800/80 rounded-xl p-5 h-40"></div>
+            <div class="animate-pulse bg-slate-900/30 border border-slate-800/80 rounded-xl p-5 h-40"></div>
+        </div>
+    </section>
+
+    <footer class="max-w-5xl mx-auto px-6 py-12 border-t border-slate-800/40 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Jorge — Ingeniería Informática. Desarrollado con HTML, Tailwind CSS y la API de GitHub.</p>
+    </footer>
+
+    <script>
+        // Inicializar iconos de Lucide
+        lucide.createIcons();
+
+        const username = 'Caver0';
+        // Repositorios que ya hemos destacado arriba para no duplicarlos abajo
+        const excludedRepos = ['fibrito', 'particleswarmoptimization', 'caver0.github.io'];
+
+        async function fetchGitHubRepos() {
+            const container = document.getElementById('github-repos');
+            try {
+                const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=15`);
+                if (!response.ok) throw new Error('Error al consultar la API de GitHub');
+                
+                const repos = await response.json();
+                container.innerHTML = ''; // Limpiar el estado de carga
+                
+                let count = 0;
+
+                repos.forEach(repo => {
+                    const isExcluded = excludedRepos.includes(repo.name.toLowerCase());
+                    // Saltarse forks y los repositorios ya mostrados como principales
+                    if (!repo.fork && !isExcluded && count < 6) {
+                        count++;
+                        const card = document.createElement('div');
+                        card.className = "flex flex-col justify-between p-5 rounded-xl bg-slate-900/30 border border-slate-800 hover:border-slate-700/60 transition group";
+                        card.innerHTML = `
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <i data-lucide="folder" class="w-4 h-4 text-indigo-400"></i>
+                                    <a href="${repo.html_url}" target="_blank" class="text-slate-400 hover:text-white transition">
+                                        <i data-lucide="github" class="w-4 h-4"></i>
+                                    </a>
+                                </div>
+                                <h4 class="font-semibold text-slate-200 group-hover:text-indigo-400 transition text-sm mb-1 truncate">${repo.name}</h4>
+                                <p class="text-slate-400 text-xs line-clamp-2 leading-relaxed mb-4">${repo.description || 'Sin descripción disponible actualmente.'}</p>
+                            </div>
+                            <div class="flex items-center justify-between text-[11px] text-slate-500 font-medium pt-2 border-t border-slate-800/50">
+                                <span class="flex items-center gap-1.5">
+                                    <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+                                    ${repo.language || 'Markdown'}
+                                </span>
+                                <span class="flex items-center gap-1"><i data-lucide="star" class="w-3 h-3"></i> ${repo.stargazers_count}</span>
+                            </div>
+                        `;
+                        container.appendChild(card);
+                    }
+                });
+
+                // Si no hay más repositorios públicos adicionales
+                if (count === 0) {
+                    container.innerHTML = '<p class="text-slate-500 text-sm col-span-full text-center py-4">Explora el resto de mis proyectos directamente en mi perfil principal.</p>';
+                }
+
+                // Volver a renderizar los iconos cargados dinámicamente
+                lucide.createIcons();
+
+            } catch (error) {
+                console.error(error);
+                container.innerHTML = '<p class="text-rose-400 text-sm col-span-full text-center">No se pudieron cargar los repositorios adicionales desde GitHub.</p>';
+            }
+        }
+
+        // Ejecutar la petición al cargar la página
+        window.onload = fetchGitHubRepos;
+    </script>
+</body>
+</html>
